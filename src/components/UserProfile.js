@@ -9,7 +9,7 @@ const UserProfile = ({list, loading}) => {
     <div>
         {loading ? (
         <div>
-            <p>Loading...</p>
+            Loading...
         </div>
       ) : (
         <div>
