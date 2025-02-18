@@ -35,7 +35,7 @@ const App = () => {
     <div>
       <Routes>
         <Route path="/" element={<UserList list={list} loading={loading}/>}/>
-        <Route path="/users/:id" element={<UserProfile list={list}/>}/>
+        <Route path="/users/:id" element={<UserProfile list={list} loading={loading}/>}/>
       </Routes>
       
     </div>

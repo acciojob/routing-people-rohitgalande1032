@@ -5,7 +5,9 @@ const UserList = ({list, loading}) => {
   return (
     <div>
       {loading ? (
-        <div>Loading...</div>
+        <div>
+            <p>Loading...</p>
+        </div>
       ) : (
         <div>
             <h1>User List</h1>
