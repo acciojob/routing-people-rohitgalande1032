@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const UserList = ({list, loading}) => {
   return (
     <div>
-    <h1>Users List</h1>
+    <h1>User List</h1>
       {loading ? (
         <div>Loading...</div>
       ) : (
