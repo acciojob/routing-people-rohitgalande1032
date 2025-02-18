@@ -11,16 +11,17 @@ const App = () => {
   const [loading, setLoading] = useState(true)
   console.log(list)
 
-  const getData = async () => {
+  const getData = () => {
     setLoading(true)
       fetch("https://jsonplaceholder.typicode.com/users")
       .then(response=> response.json())
       .then(data=> {
         setList(data)
-        setLoading(false)
       })
       .catch((error) => {
         console.error('Error:', error);
+      })
+      .finally(() => {
         setLoading(false);
       });
   }

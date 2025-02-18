@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 const UserList = ({list, loading}) => {
   return (
     <div>
-    <h1>User List</h1>
       {loading ? (
         <div>Loading...</div>
       ) : (
         <div>
+            <h1>User List</h1>
           <ul>
             {list.map((user, index) => (
               <li key={index}>
